@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Tests') {
             steps {
+                bat 'vendor\\bin\\phpcbf.bat .\\src --standard=PSR2 --extensions=php -n -s'
                 bat 'vendor\\bin\\phpcs.bat .\\src --standard=PSR2 --extensions=php -n -s'
             }
         }

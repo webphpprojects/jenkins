@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                sh 'vendor/bin/phpcs.bat ./src --standard=PSR2 --extensions=php -n -s'
+                sh 'vendor/bin/phpcs ./src --standard=PSR2 --extensions=php -n -s'
                 sh 'vendor/bin/simple-phpunit'
             }
         }

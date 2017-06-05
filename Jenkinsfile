@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'composer install --ignore-platform-reqs -n'
-                sh 'bin/console server:run'
             }
         }
         stage('Tests') {

@@ -3,7 +3,7 @@
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class AppBundleasddd
+ * Class AppBundleasdddasds
  * @package AppBundle
  */
 class AppBundle extends Bundle
